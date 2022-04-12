@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap");
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        text-decoration: none;
+        color: white;
+        font-family: 'Poppins', Courier, monospace;
+      }
+      .menu-bar {
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 250px;
+        top: 4%;
+        color: #11101d;
+        font-size: 35px;
+        background-color: white;
+        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+        margin-left: 30px;
+      }
+      .sidebar.active .menu-bar{
+        margin-left: 0;
+      }
+      .sidebar {
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 100%;
+        margin-left: -250px;
+        background-color: #11101d;
+        transition:  0.5s ease;
+      }
+      .sidebar.active {
+        margin-left: 0;
+      }
+      .sidebar .logo_content {
+        /* border: 2px solid green; */
+        height: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .sidebar .logo_content .logo {
+        font-size: 25px;
+        margin-right: 10px;
+        /* border: 2px solid red; */
+      }
+      .sidebar .logo_content .logo_name {
+        font-size: 20px;
+      }
+      .sidebar ul {
+        /* border: 2px solid yellow; */
+        margin: 10px 0px;
+      }
+      .sidebar ul li {
+        list-style: none;
+      }
+      .sidebar ul a {
+        /* border: 2px solid hotpink; */
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        height: 60px;
+        width: 100%;
+        display: inline-block;
+        padding-left: 67px;
+        padding-top: 15px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: all 0.5s ease;
+      }
+      .sidebar ul a:hover {
+        background-color: #fff;
+        color: #11101d;
+        
+      }
